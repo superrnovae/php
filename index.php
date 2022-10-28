@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <table border="1" width="70%">
+    <table border="1" width="90%">
         <tr>
             <th>id</th>
             <th>Nom</th>
@@ -36,7 +36,7 @@
                     echo "<td>$prenom</td>";
                     echo "<td>$ddn</td>";
                     echo "<td align='center'><a href='delete_user.php?id=$id'>X</a></td>";
-                    echo "<td align='center'><a href='update_user.php?id=$id&nom=$nom&prenom=$prenom&ddn=$ddn'>U</a></td>";
+                    echo "<td align='center'><a href='modify_user.php?id=$id'>U</a></td>";
                     echo "</tr>";
                 }
                 $conn->close();
@@ -67,7 +67,4 @@
             <input type="submit" value="Submit form">
         </form>
 </body>
-
-
-
 </html>
